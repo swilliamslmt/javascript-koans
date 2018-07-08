@@ -98,7 +98,7 @@ describe("2. About Functions", function() {
 
   });
 
-  it("can use a functions that return a functions", function(){
+  it("can use a function that returns a function", function(){
     var myFunc = function (){
       var count = 0;
       return function () {
@@ -110,7 +110,7 @@ describe("2. About Functions", function() {
     expect(myFunc()()).toEqual(FILL_ME_IN);
   });
 
-  it("can use a functions and closures", function(){
+  it("can use functions and closures", function(){
     var myFunc = function (){
       var count = 0;
       return function () {
