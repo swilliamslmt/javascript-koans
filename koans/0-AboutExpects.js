@@ -43,7 +43,7 @@ describe('0. About Expects', function() {
     expect(myExpectation).toBe(FILL_ME_IN);
   });
 
-  it("should make up any true statement", function() {
+  it("should make an assignment to true", function () {
     var myExpectation = FILL_ME_IN;
     expect(myExpectation).toBe(true);
   });
@@ -55,7 +55,7 @@ describe('0. About Expects', function() {
     expect(myExpectation).toBeTruthy();
   });
 
-  it("should make up any false statement", function() {
+  it("should make an assignment to false", function () {
     var myExpectation = FILL_ME_IN;
     expect(myExpectation).toBe(false);
   });
