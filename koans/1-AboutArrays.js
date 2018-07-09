@@ -56,6 +56,9 @@ describe("1. About Arrays", function() {
     expect(array.slice(5, 1)).toEqual(FILL_ME_IN);
   });
 
+  // For more information: https://www.youtube.com/watch?v=YnfwDQ5XYF4
+  // Note that the video uses `let` and `const`.
+  // For now, just think of those as doing the same job as `var`
   it("should know array references", function () {
     var array = [ "zero", "one", "two", "three", "four", "five" ];
 
