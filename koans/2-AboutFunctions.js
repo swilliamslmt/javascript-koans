@@ -114,8 +114,8 @@ describe("2. About Functions", function() {
       };
     };
 
-    expect(typeof(myFunc())).toEqual(FILL_ME_IN);
     expect(myFunc()()).toEqual(FILL_ME_IN);
+    expect( typeof myFunc() ).toEqual(FILL_ME_IN);
   });
 
   it("can use functions and closures", function(){
