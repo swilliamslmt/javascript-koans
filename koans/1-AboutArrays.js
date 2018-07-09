@@ -37,9 +37,11 @@ describe("1. About Arrays", function() {
 
     var tenEmptyElementArray = new Array(10);
     expect(tenEmptyElementArray.length).toBe(FILL_ME_IN);
+    expect(tenEmptyElementArray).toEqual([undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]);
 
     tenEmptyElementArray.length = 5;
     expect(tenEmptyElementArray.length).toBe(FILL_ME_IN);
+    expect(tenEmptyElementArray).toEqual(FILL_ME_IN);
   });
 
   it("should slice arrays", function () {
