@@ -80,6 +80,14 @@ describe("2. About Functions", function() {
     expect(returnAllArgs("first", "second", "third")).toBe(FILL_ME_IN);
   });
 
+  it("should return undefined if no return value is specified", function () {
+    function returnsUndefined() {
+
+    }
+
+    expect(returnsUndefined()).toBe(FILL_ME_IN);
+  });
+
   it("should pass functions as values", function () {
 
     var appendRules = function (name) {
