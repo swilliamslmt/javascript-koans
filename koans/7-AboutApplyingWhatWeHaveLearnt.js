@@ -30,7 +30,7 @@ describe("7. About Applying What We Have Learnt", () => {
       }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(hasMushrooms);
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", () => {

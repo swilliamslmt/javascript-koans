@@ -4,66 +4,66 @@ describe('0. About Expects', () => {
   it('should expect true', () => {
 
     // Your journey begins here: Replace the word false with true 
-    expect(false).toBeTruthy(1);
-  });
+    expect(true).toBeTruthy(1);
+  }); //done
 
   // To understand reality, we must compare our expectations against reality.
   it('should expect equality', () => {
-    const expectedValue = FILL_ME_IN;
+    const expectedValue = 2;
     const actualValue = 1 + 1;
 
     expect(actualValue === expectedValue).toBeTruthy();
-  });
+  }); //done
 
   // Some ways of asserting equality are better than others.
   it('should assert equality a better way', () => {
-    const expectedValue = FILL_ME_IN;
+    const expectedValue = 2;
     const actualValue = 1 + 1;
 
     // toEqual() compares using common sense equality.
     expect(actualValue).toEqual(expectedValue);
-  });
+  }); //done
 
   // Sometimes you need to be precise about what you "type."
   it('should assert equality with ===', () => {
-    const expectedValue = FILL_ME_IN;
+    const expectedValue = ("2");
     const actualValue = (1 + 1).toString();
 
     // toBe() will always use === to compare.
     expect(actualValue).toBe(expectedValue);
-  });
+  }); //done
 
   it("should fill in a basic expectation", () => {
     const myExpectation = 4 > 7;
-    expect(myExpectation).toBe(FILL_ME_IN);
-  });
+    expect(myExpectation).toBe(4>7);
+  }); //done 
 
   it("should fill in an expectation 2", () => {
     const myExpectation = 8 === (2*4);
-    expect(myExpectation).toBe(FILL_ME_IN);
-  });
+    expect(myExpectation).toBe(true);
+  }); //done
 
   it("should make an assignment to true", function () {
-    const myExpectation = FILL_ME_IN;
+    const myExpectation = true;
     expect(myExpectation).toBe(true);
-  });
+  }); //done
 
   it("should make up any truthy statement", () => {
-    const myExpectation = FILL_ME_IN;
+    const myExpectation = 2;
     expect(myExpectation).not.toBe("Fill this value in");
     expect(myExpectation).not.toBe(true);
     expect(myExpectation).toBeTruthy();
-  });
+  }); //done
   
   it("should make an assignment to false", function () {
-    const myExpectation = FILL_ME_IN;
+    const myExpectation = false;
     expect(myExpectation).toBe(false);
-  });
+  }); //done
 
   it("should make up any falsy statement", () => {
-    const myExpectation = FILL_ME_IN;
+    const myExpectation = 0;
     expect(myExpectation).not.toBe("Fill this value in");
     expect(myExpectation).not.toBe(false);
     expect(myExpectation).toBeFalsy();
-  });
+  }); //done
 });

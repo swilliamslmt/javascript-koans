@@ -4,17 +4,17 @@ describe("5. About Higher Order Functions", () => {
     const numbers = [1,2,3];
     const odd = numbers.filter(function (x) { return x % 2 !== 0 });
 
-    expect(odd).toEqual(FILL_ME_IN);
-    expect(odd.length).toBe(FILL_ME_IN);
-    expect(numbers.length).toBe(FILL_ME_IN);
-  });
+    expect(odd).toEqual([1,3]);
+    expect(odd.length).toBe(2);
+    expect(numbers.length).toBe(3);
+  });//done
 
   it("should use 'map' to transform each element", () => {
     const numbers = [1, 2, 3];
     const numbersPlus1 = numbers.map(function(x) { return x + 1 });
 
-    expect(numbersPlus1).toEqual(FILL_ME_IN);
-    expect(numbers).toEqual(FILL_ME_IN);
+    expect(numbersPlus1).toEqual([2,3,4]);
+    expect(numbers).toEqual([1,2,3]);
   });
 
   it("should use 'forEach' for simple iteration", () => {
@@ -26,9 +26,9 @@ describe("5. About Higher Order Functions", () => {
 
     numbers.forEach(isEven);
 
-    expect(msg).toEqual(FILL_ME_IN);
-    expect(numbers).toEqual(FILL_ME_IN);
-  });
+    expect(msg).toEqual("falsetruefalse");
+    expect(numbers).toEqual([1,2,3]);
+  });//done
 
   it("should use 'all' to test whether all items pass condition", () => {
     const onlyEven = [2,4,6];
@@ -36,9 +36,9 @@ describe("5. About Higher Order Functions", () => {
 
     const isEven = function(x) { return x % 2 === 0 };
 
-    expect(onlyEven.every(isEven)).toBe(FILL_ME_IN);
-    expect(mixedBag.every(isEven)).toBe(FILL_ME_IN);
-  });
+    expect(onlyEven.every(isEven)).toBe [2,4,6];
+    expect(mixedBag.every(isEven)).toBe[2,4,5,6];
+  });//done
 
   it("should use 'any' to test if any items passes condition" , () => {
     const onlyEven = [2,4,6];
@@ -46,9 +46,9 @@ describe("5. About Higher Order Functions", () => {
 
     const isEven = function(x) { return x % 2 === 0 };
 
-    expect(onlyEven.some(isEven)).toBe(FILL_ME_IN);
-    expect(mixedBag.some(isEven)).toBe(FILL_ME_IN);
-  });
+    expect(onlyEven.some(isEven)).toBe(true);
+    expect(mixedBag.some(isEven)).toBe(true);
+  });//done
 
   it("should write a function to filter out objects that match a criteria", () => {
     // return a filer people over 40
